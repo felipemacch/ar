@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>My First AR App</title>
+    <script src="ARJS/aframe.min.js"></script>
+    <script src="ARJS/aframe-ar.js"></script>
+</head> 
+<body>
+ 
+    <a-scene embedded artoolkit="sourceType: webcam;">
+      <!-- HIRO marker -->
+      <a-marker preset="hiro">
+        <a-box position="0 0 0" scale="2.5 2.5 2.5" color="blue"></a-box>
+      </a-marker>
+      <!-- KANJI marker -->
+      <a-marker preset="kanji">
+        <a-box position="0 0 0" scale="1.5 1.5 1.5" color="red"></a-box>
+      </a-marker>
+      <!-- A marker -->
+      <a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.a" size="1"> 
+        <a-box position="0 0 0" scale="1.5 1.5 1.5" color="red"></a-box>
+      </a-marker>
+      <!-- B marker -->
+      <a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.b" size="1"> 
+        <!-- YOUR CODE HERE -->
+      </a-marker>
+      <!-- C marker -->
+      <a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.c" size="1"> 
+        <!-- YOUR CODE HERE -->
+      </a-marker>
+      <!-- D marker -->
+      <a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.d" size="1"> 
+        <!-- YOUR CODE HERE -->
+      </a-marker>
+ 
+      <!-- F marker -->
+      <a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.f" size="1"> 
+        <!-- YOUR CODE HERE -->
+      </a-marker>
+ 
+      <!-- G marker -->
+      <a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.g" size="1"> 
+        <!-- YOUR CODE HERE -->
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>

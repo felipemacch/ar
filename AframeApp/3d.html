@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>My First AR App</title>
+    <script src="ARJS/aframe.min.js"></script>
+    <script src="ARJS/aframe-ar.js"></script>
+  </head>
+  <body>
+    <a-scene embedded artoolkit="sourceType: webcam;">
+ 
+      <a-assets>
+        <a-asset-item id="obj1" src="rijks-buddha.obj"></a-asset-item>
+        <a-asset-item id="mtl1" src="rijks-buddha.mtl"></a-asset-item>
+      </a-assets>
+ 
+      <a-marker preset="hiro">
+        <a-obj-model src="#obj1" mtl="#mtl1" position="0 0 0" rotation="-90 0 0" scale="0.3 0.3 0.3">
+        </a-obj-model>
+      </a-marker>
+ 
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
+  </body>
+</html>
