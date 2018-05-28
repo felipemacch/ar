@@ -3412,8 +3412,8 @@ THREEx.ArucoContext = function(parameters){
     // debug - true if one should display artoolkit debug canvas, false otherwise
     debug: parameters.debug !== undefined ? parameters.debug : false,
     // resolution of at which we detect pose in the source image
-    canvasWidth: parameters.canvasWidth !== undefined ? parameters.canvasWidth : 640,
-    canvasHeight: parameters.canvasHeight !== undefined ? parameters.canvasHeight : 480,
+    canvasWidth: parameters.canvasWidth !== undefined ? parameters.canvasWidth : 1280,
+    canvasHeight: parameters.canvasHeight !== undefined ? parameters.canvasHeight : 720,
   }
 
 
